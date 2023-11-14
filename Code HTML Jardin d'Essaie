@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Jardins de Saint-Eloi</title>
+    <link rel="stylesheet" href="/CSS/Accueil.css" />
+    <link rel="stylesheet" href="/JavaScript/Accueil.js" />
+    <link rel="stylesheet" href="" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+  </head>
+  <body>
+    <header>
+      <div class="en-tete">
+        <h1>Jardins de Saint-Eloi</h1>
+        <ul>
+          <span class="material-symbols-outlined"><a href="/HTML/index.html" style="text-decoration: none; color: white; font-size: 35px;" >house</a></span>
+        </ul>
+        <form action="">
+          <input type="search" name="search" placeholder="Rechercher..." />
+        </form>
+      </div>
+    </header>
+    <main>
+      <div class="container-liste">
+        <ul>
+          <li>Présentation</li>
+          <li>Fleurs</li>
+          <li>Idées Cadeaux</li>
+          <li>Conditions de ventes</li>
+          <li>Nous contacter</li>
+        </ul>
+      </div>
+      <div class="container-img">
+        <div class="container-presentation">
+          <div class="presentation">
+            <h2>Presentation</h2>
+            <p>
+              Située sur la route des célèbres Chutes du Carbet, sur les
+              hauteurs verdoyantes de l’Habituée, à Capesterre-Belle-Eau, le
+              domaine de Saint-Eloi est un paradis naturel de fleurs tropicales
+              et de plantes d’ornements. Il n’y a pas vraiment de visite de
+              l’exploitation mais une boutique où vous pourrez vous rendre peu
+              avant votre départ. Cet horticulteur, renommé qui possède
+              également une boutique dans l’aéroport, propose des bouquets de
+              fleurs tropicales conditionnés pour le transport en avion.
+            </p>
+          </div>
+        </div>
+      </div>
+    </main>
+  </body>
+</html>
