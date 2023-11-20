@@ -1,11 +1,11 @@
 @font-face {
-  font-family: "Griffy";
-  src: url("/Griffy-Regular.ttf");
+  font-family: "Agbalumo";
+  src: url("/Agbalumo-Regular.ttf");
 }
 
 @font-face {
-  font-family: "Cinzel";
-  src: url("/Cinzel-VariableFont_wght.ttf");
+  font-family: "FleurDeLeah";
+  src: url("/SawarabiMincho-Regular.ttf");
 }
 
 * {
@@ -14,28 +14,26 @@
 }
 
 body {
-  background: rgba(0, 0, 0, 0.836);
-  background-image: url("/Image/kirstenbosch-botanical-gardens-3301303_1920.jpg");
+  background: #dddadf;
+  background-image: url("/Image/Jardin\ Magnifique.png");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
-  backdrop-filter: blur(2px);
 }
 
 .en-tete {
   min-height: 100px;
   margin-left: 0%;
   width: 100%;
-  color: rgb(255, 255, 255);
   display: grid;
   grid-template-columns: 60% 10% 20%;
   justify-content: center;
   align-items: center;
-  background: #000000;
+  background: #091010;
   background-repeat: no-repeat;
   background-size: cover;
   position: relative;
-  font-family: "Griffy";
+  font-family: "Agbalumo";
 }
 
 .material-symbols-outlined {
@@ -58,32 +56,47 @@ body {
 }
 
 .en-tete h1 {
-  color: white;
+  color: #ffffff;
   text-transform: uppercase;
   padding-left: 55%;
   text-align: center;
   letter-spacing: 3px;
-  text-shadow: -13px 2px 6px rgb(0, 0, 0);
-  font-size: 2rem;
+  font-size: 2.3rem;
+}
+
+.material-symbols-outlined {
+  background-color: #091010;
+  padding: 10px 20px;
+  border: none;
+  cursor: pointer;
+  transition: transform 0.1s;
+}
+
+.material-symbols-outlined:hover {
+  background-color: #292929b9;
+}
+
+.material-symbols-outlined:active {
+  transform: scale(0.95);
 }
 
 main {
-  font-family: "Cinzel";
+  font-family: "FleurDeLeah";
 }
 
 .container-liste {
-  color: white;
-  min-height: 1000px;
-  width: 20%;
-  background: #1b1b1a;
-  margin-top: -110px;
   position: relative;
+  margin-top: 0px;
+  color: rgb(255, 255, 255);
+  height: 900px;
+  width: 20%;
   text-shadow: -20px 3px 20px black;
+  background: #091010;
+  border-bottom-right-radius: 100px;
   opacity: 0.9;
 }
 
 .container-liste ul {
-  margin-top: 110px;
   display: flex;
   justify-content: center;
   flex-direction: column;
@@ -96,17 +109,17 @@ main {
 
 .container-liste ul li {
   margin-top: 100px;
-  padding: 30px;
-  height: 50px;
+  padding: 10px;
+  height: 20px;
   transition: 1s;
+  font-size: 1.1rem;
 }
 
 .container-liste ul li:hover {
-  background: #000000;
-  border-radius: 20px;
-  display: inline-block;
+  background: #29292969;
   cursor: pointer;
-  width: 80%;
+  height: 50px;
+  width: 100%;
   text-align: center;
 }
 
@@ -122,7 +135,7 @@ main {
   }
 
   .en-tete {
-    background: rgb(0, 0, 0);
+    background: #e5e4e6;
     width: 100%;
   }
 
@@ -153,35 +166,29 @@ main {
 }
 
 .container-img {
-  position: absolute;
-  min-height: 114vh;
-  width: 80%;
-  margin-left: 20%;
-  margin-top: -1050px;
-  background-image: url("");
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center;
+  height: 100%;
+  width: 100%;
+  margin-top: -910px;
 }
 
 .container-presentation {
-  min-height: 1000px;
-  width: 90%;
-  margin: 25px auto;
+  height: 1000px;
+  width: 100%;
   display: flex;
   justify-content: center;
   align-items: center;
   text-align: center;
-  color: white;
+  color: rgb(255, 255, 255);
 }
 
 .presentation {
   height: 500px;
-  width: 70%;
-  margin: 0 0 0 200px;
-  background: rgba(0, 0, 0, 0.842);
+  width: 40%;
+  margin: -140px 0 0 140px;
   opacity: 0.9;
-  border-radius: 20px;
+  border-radius: 100px;
+  background: #091010;
+  opacity: 0.8;
 }
 
 .container-presentation p {
@@ -191,7 +198,7 @@ main {
 
 .container-presentation h2 {
   padding-top: 50px;
-  color: white;
+  color: rgb(255, 255, 255);
 }
 
 @media screen and (max-width: 904px) {
@@ -217,6 +224,69 @@ main {
     font-size: 0.8rem;
   }
 }
+
+.container-pied {
+  height: 200px;
+  width: 100%;
+  background-color: white;
+}
+
+/* Styles du footer */
+footer {
+  width: 100%;
+  height: 250px;
+  background-color: #000000;
+  color: white;
+  padding: 20px 0;
+  text-align: center;
+}
+
+footer div {
+  margin-bottom: 20px;
+}
+
+footer h3 {
+  color: #f8f8f8;
+}
+
+footer p,
+footer a {
+  color: #ddd;
+  text-decoration: none;
+}
+
+footer a:hover {
+  color: #f8f8f8;
+}
+
+footer ul {
+  list-style: none;
+  padding: 0;
+}
+
+footer ul li {
+  display: inline;
+  margin-right: 20px;
+  word-spacing: 30px;
+}
+
+/* Adaptation pour petits écrans */
+@media (max-width: 600px) {
+  footer {
+    width: 100%;
+  }
+
+  footer div {
+    text-align: left;
+    padding: 0 20px;
+  }
+
+  footer ul li {
+    display: block;
+    margin-bottom: 10px;
+  }
+}
+
 
 
 
