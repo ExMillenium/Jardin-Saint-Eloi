@@ -1,0 +1,179 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background: #f8f8f8;
+  color: #333;
+  animation: fadeIn 1s ease-in;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+header {
+  background: #f0e2c9;
+  color: rgb(0, 0, 0);
+  padding: 20px 0;
+  height: 100px;
+  text-align: center;
+  animation: slideDown 0.5s ease-out;
+}
+
+@keyframes slideDown {
+  from {
+    margin-top: -50px;
+  }
+  to {
+    margin-top: 0;
+  }
+}
+
+header h1 {
+  margin: 0;
+  font-size: 2em;
+  text-transform: uppercase;
+}
+
+section {
+  padding: 20px;
+  border-bottom: 1px solid #ddd;
+  transition: background-color 0.3s;
+}
+
+section:hover {
+  background-color: #eeeeee;
+}
+
+section h2 {
+  color: black;
+  animation: slideRight 0.5s ease-out;
+  text-align: center;
+}
+
+section p {
+  text-align: center;
+}
+
+@keyframes slideRight {
+  from {
+    margin-left: -50px;
+  }
+  to {
+    margin-left: 0;
+  }
+}
+
+footer {
+  background: #f0e2c9;
+  color: rgb(0, 0, 0);
+  text-align: center;
+  padding: 10px 0;
+  position: relative;
+  animation: riseUp 0.5s ease-in-out;
+}
+
+@keyframes riseUp {
+  from {
+    bottom: -20px;
+  }
+  to {
+    bottom: 0;
+  }
+}
+
+footer a {
+  color: #000000;
+  text-decoration: none;
+}
+
+@media screen and (max-width: 600px) {
+  section,
+  footer {
+    padding: 10px;
+  }
+}
+
+/* Navbar Styles */
+#navbar {
+  margin: 77px 0 0 0;
+  height: 1167px;
+  width: 0;
+  position: absolute;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color: #f0e2c9;
+  overflow-x: hidden;
+  transition: 0.5s;
+  padding-top: 60px;
+  text-align: center;
+}
+
+#navbar a {
+  padding: 8px 8px 8px 32px;
+  text-decoration: none;
+  font-size: 25px;
+  color: black;
+  display: block;
+  transition: 0.3s;
+  text-align: center;
+  margin-top: 100px;
+  padding: 10px;
+  height: 20px;
+  transition: 1s;
+  font-size: 1.5rem;
+  text-align: center;
+}
+
+#navbar a:hover {
+  background: white;
+  cursor: pointer;
+  height: 50px;
+  text-align: center;
+}
+
+#navbarToggle {
+  position: absolute;
+  top: 0;
+  left: 0;
+  font-size: 30px;
+  cursor: pointer;
+  padding: 10px;
+}
+
+/* Responsive Styles for Sidebar */
+@media screen and (max-width: 1024px) {
+  /* Larger than mobile screens but smaller than desktops */
+  #navbar {
+    width: 0; /* Keep the navbar collapsed by default */
+  }
+
+  #navbarToggle {
+    display: block; /* Ensure toggle button is visible */
+  }
+}
+
+@media screen and (max-width: 600px) {
+  /* Mobile screens */
+  #navbar {
+    width: 0; /* Keep the navbar collapsed by default */
+  }
+
+  #navbarToggle {
+    display: block; /* Ensure toggle button is visible */
+  }
+
+  #navbar a {
+    font-size: 20px; /* Adjust font size for smaller screens */
+  }
+
+  #navbarToggle {
+    font-size: 25px; /* Adjust toggle button size for easier interaction */
+  }
+}
