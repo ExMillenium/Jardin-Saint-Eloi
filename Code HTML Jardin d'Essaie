@@ -16,14 +16,14 @@
     <header>
       <div class="en-tete">
         <h1>Jardin de Saint-Eloi</h1>
-        <img src="/Image/Logo fond noire.png" alt="" />
+        <img src="/Image/Floral logo.png">
         <ul>
           <span class="material-symbols-outlined"
             ><a
               href="/HTML/index.html"
               style="
                 text-decoration: none;
-                color: rgb(255, 255, 255);
+                color: rgb(0, 0, 0);
                 font-size: 35px;
               "
               >house</a
@@ -42,30 +42,14 @@
           <li>Fleurs</li>
           <li>Idées Cadeaux</li>
           <li>
-            <a href="" style="text-decoration: none; color: white"
+            <a href="/HTML/Condiition-de-vente.html" style="text-decoration: none; color: rgb(0, 0, 0)"
               >Conditions de ventes</a
             >
           </li>
           <li>Nous contacter</li>
         </ul>
       </div>
-      <div class="container-img">
-        <div class="container-presentation">
-          <div class="presentation">
-            <h2>Presentation</h2>
-            <p>
-              Située sur la route des célèbres Chutes du Carbet, sur les
-              hauteurs verdoyantes de l’Habituée, à Capesterre-Belle-Eau, le
-              domaine de Saint-Eloi est un paradis naturel de fleurs tropicales
-              et de plantes d’ornements. Il n’y a pas vraiment de visite de
-              l’exploitation mais une boutique où vous pourrez vous rendre peu
-              avant votre départ. Cet horticulteur, renommé qui possède
-              également une boutique dans l’aéroport, propose des bouquets de
-              fleurs tropicales conditionnés pour le transport en avion.
-            </p>
-          </div>
-        </div>
-      </div>
+      <div id="boiteNoire"></div>   
     </main>
     <div class="container-pied">
       <footer>
@@ -96,4 +80,5 @@
     </div>
   </body>
 </html>
+
 
