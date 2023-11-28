@@ -1,3 +1,8 @@
+@font-face {
+  font-family: "FleurDeLeah";
+  src: url("/SawarabiMincho-Regular.ttf");
+}
+
 body {
   font-family: Arial, sans-serif;
   margin: 0;
@@ -17,7 +22,7 @@ body {
 }
 
 header {
-  background: #f0e2c9;
+  background: linear-gradient(to right, #f0e2c9ea , #f5d194);
   color: rgb(0, 0, 0);
   padding: 20px 0;
   height: 100px;
@@ -38,6 +43,7 @@ header h1 {
   margin: 0;
   font-size: 2em;
   text-transform: uppercase;
+  font-family: "FleurDeLeah";
 }
 
 section {
@@ -70,7 +76,7 @@ section p {
 }
 
 footer {
-  background: #f0e2c9;
+  background: linear-gradient(to right, #f0e2c9ea , #f5d194);
   color: rgb(0, 0, 0);
   text-align: center;
   padding: 10px 0;
@@ -102,7 +108,7 @@ footer a {
 /* Navbar Styles */
 #navbar {
   margin: 77px 0 0 0;
-  height: 1167px;
+  height: 1230px;
   width: 0;
   position: absolute;
   z-index: 1;
@@ -127,8 +133,12 @@ footer a {
   padding: 10px;
   height: 20px;
   transition: 1s;
-  font-size: 1.5rem;
+  font-size: 1rem;
   text-align: center;
+  text-transform: uppercase;
+  letter-spacing: 5px;
+  font-family: "FleurDeLeah";
+
 }
 
 #navbar a:hover {
